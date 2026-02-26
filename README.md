@@ -16,7 +16,12 @@ winget install typst
 cargo install utpm
 
 # установка
-utpm add ghost
+utpm ws add https://github.com/Mih4n/Ghost
+utpm ws install
 ```
 
 ## Использование
+
+```typ
+#import "ghost:1.0.0": *
+```
