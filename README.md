@@ -13,15 +13,22 @@ winget install typst
 # если вы на линуксе или macOS пакетный менеджер точно имеет пакет typst
 
 # зависимости
-cargo install utpm
+cargo install typship
 
 # установка
-utpm ws add https://github.com/Mih4n/Ghost
-utpm ws install
+git clone https://github.com/mih4n/ghost
+cd ghost
+typship install mih4n
+
+# обновление
+# зайти в папку с пакетом
+cd ghost
+git pull
+typship install mih4n -y
 ```
 
 ## Использование
 
-```typ
-#import "ghost:1.0.0": *
-```
+смотрите примеры в папке `examples`
+
+## Лицензия MIT

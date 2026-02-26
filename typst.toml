@@ -3,7 +3,3 @@ name = "ghost"
 version = "1.0.0"
 entrypoint = "lib.typ"
 authors = ["Mih4n"]
-
-[tool.utpm]
-namespace = "mih4n"
-dependencies = ["https://github.com/Mih4n/Ghost"]

@@ -1,6 +1,6 @@
-#import "pages/.pages.typ": pages
-#import "blocks/.blocks.typ": blocks
-#import "styles/.styles.typ": styles 
+#import "pages/index.typ": pages
+#import "blocks/index.typ": blocks
+#import "styles/index.typ": styles 
 
 #let pages = pages
 #let blocks = blocks
