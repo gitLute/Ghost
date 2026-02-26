@@ -5,4 +5,5 @@ entrypoint = "lib.typ"
 authors = ["Mih4n"]
 
 [tool.utpm]
-namespace = "mih4n"
+namespace = "mihan"
+dependencies = ["https://github.com/Mih4n/Ghost"]

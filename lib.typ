@@ -8,4 +8,4 @@
 
 #let picture = blocks.picture
 #let title-page = pages.title
-#let standard-stiles = styles.standard
+#let standard-styles = styles.standard
