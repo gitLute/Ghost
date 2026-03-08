@@ -30,11 +30,17 @@
   set heading(numbering: "1.1.")
 
   show heading: set text(size: 14pt)
-  show heading: set block(spacing: 0.5em)
-  show heading: it => {
-    pad(left: 1.25cm, it)
-    [\ ]
+  show heading: set block(spacing: 0.5em, inset: (left: 1.25cm))
+
+  show outline: it => {
+    show heading: it => {
+      set block(inset: (left: 0pt))
+      align(center)[#it]
+      [\ ]
+    }
+    it
   }
+
 
   show list: it => { context {
     let depth = counter(list).get().at(0)
