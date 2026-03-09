@@ -34,9 +34,8 @@
 
   show outline: it => {
     show heading: it => {
-      set block(inset: (left: 0pt))
+      set block(inset: (left: 0pt, bottom: 1em))
       align(center)[#it]
-      [\ ]
     }
     it
   }
