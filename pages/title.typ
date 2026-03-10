@@ -7,7 +7,7 @@
   student: "Лосев М.А.",
   supervisor: "Карась О.В.",
   supervisorTitle: "ассистент",
-  workType: "lab", // или referat
+  type: "lab", // или referat
   year: 2026
 ) = {
   align(center)[
