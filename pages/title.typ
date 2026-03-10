@@ -7,7 +7,7 @@
   student: "Лосев М.А.",
   supervisor: "Карась О.В.",
   supervisorTitle: "ассистент",
-  workType: "lab",
+  workType: "lab", // или referat
   year: 2026
 ) = {
   align(center)[
@@ -28,7 +28,7 @@
 
     #if workType == "lab" [
       ЛАБОРАТОРНАЯ РАБОТА №#number
-    ] else [
+    ] else if workType == "referat"  [
       РЕФЕРАТ
     ]
     
