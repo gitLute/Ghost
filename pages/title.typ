@@ -1,11 +1,13 @@
 #let page(
-  number: 1, 
-  course: "ооп", 
+  number: 1,
+  department: "Информационные технологии",
+  course: "ооп",
   theme: "программирование",
   group: "ИТП-21",
   student: "Лосев М.А.",
   supervisor: "Карась О.В.",
   supervisorTitle: "ассистент",
+  workType: "lab",
   year: 2026
 ) = {
   align(center)[
@@ -20,11 +22,15 @@
     Факультет автоматизированных и информационных систем
 
 
-    Кафедра "Информационные технологии"
+    Кафедра "#department"
 
     \  
 
-    ЛАБОРАТОРНАЯ РАБОТА №#number
+    #if workType == "lab" [
+      ЛАБОРАТОРНАЯ РАБОТА №#number
+    ] else [
+      РЕФЕРАТ
+    ]
     
     #set par(spacing: 0.5em)
     по дисциплине: "#course"
