@@ -2,5 +2,6 @@
   align(center)[
     #set block(inset: (left: 0em))
     #heading(level: 1, numbering: none)[#title]
+    #counter(heading).update(0)
   ]
 }
