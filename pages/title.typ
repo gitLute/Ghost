@@ -26,9 +26,9 @@
 
     \  
 
-    #if workType == "lab" [
+    #if type == "lab" [
       ЛАБОРАТОРНАЯ РАБОТА №#number
-    ] else if workType == "referat"  [
+    ] else if type == "referat"  [
       РЕФЕРАТ
     ]
     
