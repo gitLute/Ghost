@@ -31,6 +31,7 @@
 
   show heading: set text(size: 14pt)
   show heading: set block(spacing: 0.5em, inset: (left: 1.25cm))
+  show heading: it => block(it)
 
   show outline: it => {
     show heading: it => {
@@ -48,9 +49,19 @@
     for child in it.children {
       set par(first-line-indent: (amount: indent, all: true))
 
-      let count = it.marker.len()
-      let cycle = calc.rem(depth - 1, count)
-      it.marker.at(cycle)
+      if type(it.marker) == content {
+        it.marker
+      }
+
+      if type(it.marker) == array {
+        let count = it.marker.len()
+        let cycle = calc.rem(depth - 1, count)
+        it.marker.at(cycle)
+      }
+
+      if type(it.marker) == function {
+        it.marker(depth)
+      }
 
       h(it.body-indent)
       child.body
