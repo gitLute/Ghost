@@ -12,7 +12,7 @@ typst
 winget install typst
 # если вы на линуксе или macOS пакетный менеджер точно имеет пакет typst
 
-# зависимости
+# зависимости, требует установки rust, https://rust-lang.org/tools/install/
 cargo install typship
 
 # установка
